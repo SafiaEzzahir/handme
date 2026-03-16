@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { useEffect } from 'react'
 
+import Auther from './component babies/Auther'
+
 import './App.css'
 
 function App() {
@@ -26,7 +28,7 @@ function App() {
     )
   } else if (currentStage === "AuthTime") {
     return (<div className="App">
-      <h1>Authentication Time</h1>
+      <Auther />
       <button onClick={() => handleStageChange("Game")}>Proceed to Game</button>
       <button onClick={() => handleStageChange("StartPage")}>Back to Start</button>
     </div>
